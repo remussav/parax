@@ -1,101 +1,107 @@
 
 
 
-var titleSelect = document.getElementById("00NHu00000LLlWG");
+var professionsSelect = document.getElementById("00NHu00000LLlWG");
 var provinceSelect = document.getElementById("00NHu00000LLlWB");
-var affliationSelect = document.getElementById("00NHu00000LLsJs");
+var licensingBodySelect = document.getElementById("00NHu00000LLsJs");
 
-const addOptionsValueToTitleSelect = () => {
-    var titleArray = ["Acupuncturist",
-        "Audiologist",
-        "Cardiology Technologist",
-        "Chinese Medicine Practitioner",
-        "Chiropodist",
-        "Chiropractor",
-        "Clinical Counsellor",
-        "Counselling Therapist",
-        "Dental Assistant",
-        "Dental Hygienist",
-        "Dental Prosthesis and Appliance Technologist",
-        "Dental Surgeon",
-        "Dental Technician",
-        "Dental Therapist",
-        "Dentist",
-        "Denturist",
-        "Dietician",
-        "Guidance counsellor",
-        "Hearing Aid Practitioner",
-        "Homeopath",
-        "Kinesiologist",
-        "Laboratory and X-Ray Technologist",
-        "Massage Therapist",
-        "Medical Diagnostic and Therapeutic Technologist",
-        "Medical Electrophysiology Technologist",
-        "Medical Laboratory Technologist",
-        "Medical Radiation Technologist",
-        "Medical Technologist",
-        "Midwife",
-        "Naturopathic Doctor",
-        "Nurse",
-        "Nursing Assistant",
-        "Occupational Therapist",
-        "Optician",
-        "Optometrist",
-        "Other (fill in the blank)",
-        "Paramedic",
-        "Pharmacist",
-        "Physician",
-        "Physiotherapist",
-        "Podiatrist",
-        "Psychoeducator",
-        "Psychologist",
-        "Psychotherapist",
-        "Recreation Therapist",
-        "Respiratory Therapist",
-        "Sexologist",
-        "Social Worker",
-        "Speech and Hearing Health Professional",
-        "Speech Language Pathologist"];
-
+const addOptionsValueToProfessionsSelect = (professionsArray) => {
     var option = document.createElement("option");
-    option.value = "";
-    option.text = "--None--";
-    titleSelect.add(option);
-    for (var i = 0; i < titleArray.length; i++) {
+    for (var i = 0; i < professionsArray.length; i++) {
         var option = document.createElement("option");
-        option.value = titleArray[i];
-        option.text = titleArray[i];
-        titleSelect.add(option);
+        option.value = professionsArray[i];
+        option.text = professionsArray[i];
+        professionsSelect.add(option);
     }
 }
 
-addOptionsValueToTitleSelect();
+const addOptionsValueToLicensingBodySelect = (licensingBodyArray) => {
+    var option = document.createElement("option");
+    for (var i = 0; i < licensingBodyArray.length; i++) {
+        var option = document.createElement("option");
+        option.value = licensingBodyArray[i];
+        option.text = licensingBodyArray[i];
+        licensingBodySelect.add(option);
+    }
+}
 
 const onChangeProvincialSelect = (evt) => {
     let noneOfAboveMessage = "Thank you for your interest in becoming a PaRx prescriber! Our program is currently available for licensed Canadian healthcare professionals only. Please sign up for our newsletter to stay up to date on the latest news about PaRx!";
     let notAvaliableMessage = "We haven't launched in your territory yet, but will be in touch with more information when we do.";
-    let AfflicationProvinceSpecifiedList = [];
-    affliationSelect.innerHTML === "";
+    let licensingArrayProvinceSpecifiedList = [];
+    let professionsOptionsList = [];
+    licensingBodySelect.innerHTML === "";
+    professionsSelect.innerHTML === "";
     switch(evt.target.value) {
         case "none of the above" :
             alert(noneOfAboveMessage);
             break;
         case "AB": 
-            AfflicationProvinceSpecifiedList = ["Alberta College of Combined Laboratory and X-Ray Technologists",
+            licensingArrayProvinceSpecifiedList = ["Alberta College of Combined Laboratory and X-Ray Technologists",
                 "Alberta College of Medical Diagnostic and Therapeutic Technologists",
-                "Alberta College of Occupational Therapists",
-                "Alberta College of Optometrists",
-                "Alberta College of Paramedics",
-                "Alberta College of Pharmacy",
-                "Alberta College of Social Workers",
-                "Alberta College of Speech-Language Pathologists and Audiologists",
-                "Alberta Dental Association and College"];
-            for (var i = 0; i < AfflicationProvinceSpecifiedList.length; i++) {
-                var option = document.createElement("option");
-                option.value = AfflicationProvinceSpecifiedList[i];
-                option.text = AfflicationProvinceSpecifiedList[i];
-                affliationSelect.add(option);
-            };
+                "Alberta College of Occupational Therapists",  
+                "Alberta College of Optometrists",  
+                "Alberta College of Paramedics",  
+                "Alberta College of Pharmacy",  
+                "Alberta College of Social Workers",  
+                "Alberta College of Speech-Language Pathologists and Audiologists",   
+                "Alberta Dental Association and College",  
+                "Canadian Therapeutic Recreation Association",
+                "College and Association of Respiratory Therapists of Alberta",  
+                "College of Acupuncturists of Alberta",   
+                "College of Alberta Dental Assistants",   
+                "College of Alberta Denturists",  
+                "College of Alberta Psychologists",  
+                "College of Chiropractors of Alberta",  
+                "College of Dental Technologists of Alberta",   
+                "College of Dietitians of Alberta",  
+                "College of Hearing Aid Practitioners of Alberta",  
+                "College of Licensed Practical Nurses of Alberta",  
+                "College of Medical Laboratory Technologists of Alberta",  
+                "College of Midwives of Alberta",  
+                "College of Naturopathic Doctors of Alberta",  
+                "College of Opticians of Alberta",  
+                "College of Physicians and Surgeons of Alberta",  
+                "College of Physiotherapists of Alberta",   
+                "College of Podiatric Physicians of Alberta",  
+                "College of Registered Dental Hygienists of Alberta",  
+                "College of Registered Nurses of Alberta",  
+                "College of Registered Psychiatric Nurses of Alberta"];
+             professionsOptionsList = ["Acupuncturist",
+                "Audiologist",
+                "Chiropractor",
+                "Dental Assistant",
+                "Dental Hygienist",
+                "Dental Technician",
+                "Dentist",
+                "Denturist",
+                "Dietician",
+                "Hearing Aid Practitioner",
+                "Laboratory and X-Ray Technologist",
+                "Medical Diagnostic and Therapeutic Technologist",
+                "Medical Laboratory Technologist",
+                "Midwife",
+                "Naturopathic Doctor",
+                "Registered Nurse",
+                "Nurse Practitioner",
+                "Occupational Therapist",
+                "Optician",
+                "Optometrist",
+                "Orthodontist",
+                "Paramedic",
+                "Pharmacist",
+                "Physician (Family)",
+                "Physician (Specialist)",
+                "Physiotherapist",
+                "Podiatrist",
+                "Practical Nurse",
+                "Psychiatric Nurse",
+                "Psychologist",
+                "Respiratory Therapist",
+                "Recreation Therapist",
+                "Social Worker",
+                "Speech Language Pathologist",
+                "None of the above"];
             break;
         case "YK" :
             alert(notAvaliableMessage);
@@ -112,6 +118,8 @@ const onChangeProvincialSelect = (evt) => {
             break;
     }
 
+    addOptionsValueToProfessionsSelect(professionsOptionsList);
+    addOptionsValueToLicensingBodySelect(licensingArrayProvinceSpecifiedList);
     
 }
 
