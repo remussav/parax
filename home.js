@@ -30,8 +30,8 @@ const onChangeProvincialSelect = (evt) => {
     let notAvaliableMessage = "We haven't launched in your territory yet, but will be in touch with more information when we do.";
     let licensingArrayProvinceSpecifiedList = [];
     let professionsOptionsList = [];
-    licensingBodySelect.innerHTML === "";
-    professionsSelect.innerHTML === "";
+    licensingBodySelect.innerHTML = "";
+    professionsSelect.innerHTML = "";
     switch(evt.target.value) {
         case "none of the above" :
             alert(noneOfAboveMessage);
@@ -101,6 +101,57 @@ const onChangeProvincialSelect = (evt) => {
                 "Recreation Therapist",
                 "Social Worker",
                 "Speech Language Pathologist",
+                "None of the above"];
+            break;
+        case "BC": 
+            licensingArrayProvinceSpecifiedList = ["College of Traditional Chinese Medicine Practitioners and Acupuncturists of British Columbia",
+                "BC Association of Clinical Counsellors",
+                "British Columbia College of Nurses and Midwives", 
+                "British Columbia College of Oral Health Professionals", 
+                "British Columbia College of Social Workers",  
+                "Canadian Therapeutic Recreation Association",
+                "College of Chiropractors of British Columbia", 
+                "College of Dietitians of British Columbia", 
+                "College of Massage Therapists of British Columbia", 
+                "College of Naturopathic Physicians of British Columbia", 
+                "College of Occupational Therapists of British Columbia", 
+                "College of Opticians of British Columbia", 
+                "College of Optometrists of British Columbia", 
+                "College of Pharmacists of British Columbia", 
+                "College of Physical Therapists of British Columbia", 
+                "College of Physicians and Surgeons of British Columbia",
+                "College of Psychologists of British Columbia", 
+                "College of Speech and Hearing Health Professionals of British Columbia", 
+                "Emergency Medical Assistants Licensing Board"];
+             professionsOptionsList = ["Acupuncturist",
+                "Audiologist",
+                "Traditional Chinese Medicine Practitioner",
+                "Chiropractor",
+                "Clinical Counsellor",
+                "Dental Hygienist",
+                "Dental Technician",
+                "Dentist",
+                "Denturist",
+                "Dietician",
+                "Massage Therapist",
+                "Midwife",
+                "Naturopathic Doctor",
+                "Registered Nurse",
+                "Nurse Practitioner",
+                "Occupational Therapist",
+                "Optician",
+                "Optometrist",
+                "Orthodontist",
+                "Paramedic",
+                "Pharmacist",
+                "Pharmacy Technician",
+                "Physician (Family)",
+                "Physician (Specialist)",
+                "Physiotherapist",
+                "Psychologist",
+                "Recreation Therapist",
+                "Social Worker",
+                "Speech and Hearing Health Professional",
                 "None of the above"];
             break;
         case "YK" :
