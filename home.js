@@ -1,9 +1,9 @@
 
 
 
-var titleSelect = document.getElementById("00N8c00000hNBSJ");
-var provinceSelect = document.getElementById("00N8c00000hNC8Z");
-var affliationSelect = document.getElementById("00N8c00000hNGTb");
+var titleSelect = document.getElementById("00NHu00000LLlWG");
+var provinceSelect = document.getElementById("00NHu00000LLlWB");
+var affliationSelect = document.getElementById("00NHu00000LLsJs");
 
 const addOptionsValueToTitleSelect = () => {
     var titleArray = ["Acupuncturist",
