@@ -131,7 +131,7 @@ const onChangeProvincialSelect = (evt) => {
                 "Dentist",
                 "Denturist",
                 "Dietician",
-                "Licensed Practical Nurse"
+                "Licensed Practical Nurse",
                 "Massage Therapist",
                 "Midwife",
                 "Naturopathic Doctor",
@@ -567,7 +567,7 @@ const onChangeProvincialSelect = (evt) => {
                 "Ordre des Hygiénistes Dentaires du Québec",
                 "Ordre des infirmières et infirmiers auxiliaires du Québec",
                 "Ordre des infirmières et infirmiers du Québec",
-                "Ordre des opticiens d’ordonnances du Québec",
+                `Ordre des opticiens d’ordonnances du Québec`,
                 "Ordre des optométristes du Québec",
                 "Ordre des orthophonistes et audiologists du Québec",
                 "Ordre des pharmaciens du Québec",
@@ -609,7 +609,7 @@ const onChangeProvincialSelect = (evt) => {
                 "Physician",
                 "Physiotherapist",
                 "Podiatrist",
-                "Psychoeducator"
+                "Psychoeducator",
                 "Psychologist",
                 "Recreation Therapist",
                 "Registered Nurse",
