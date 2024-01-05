@@ -26,14 +26,14 @@ const addOptionsValueToLicensingBodySelect = (licensingBodyArray) => {
 }
 
 const onChangeProvincialSelect = (evt) => {
-    let noneOfAboveMessage = "Thank you for your interest in becoming a PaRx prescriber! Our program is currently available for licensed Canadian healthcare professionals only. Please sign up for our newsletter to stay up to date on the latest news about PaRx!";
+    let noneOfAboveMessage = "Thank you for your interest in becoming a PaRx prescriber! Our program is currently available for licensed healthcare professionals governed by a regulatory body or college in Canada only, which varies from province to province. Please sign up for our newsletter to stay up to date on the latest news about PaRx!";
     let notAvaliableMessage = "We haven't launched in your territory yet, but will be in touch with more information when we do.";
     let licensingArrayProvinceSpecifiedList = [];
     let professionsOptionsList = [];
     licensingBodySelect.innerHTML = "";
     professionsSelect.innerHTML = "";
     switch(evt.target.value) {
-        case "none of the above" :
+        case "None of the above" :
             alert(noneOfAboveMessage);
             break;
         case "AB": 
@@ -630,7 +630,7 @@ const onChangeProvincialSelect = (evt) => {
             alert(notAvaliableMessage);
             break;
         case "":
-            alert("Please select the Canadian province of you practice to continue.")
+            alert("Please select the Canadian province of your practice to continue.")
         default:
             break;
     }
