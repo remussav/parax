@@ -44,16 +44,16 @@ const onChangeProvincialSelect = (evt) => {
                 "Alberta College of Paramedics",  
                 "Alberta College of Pharmacy",  
                 "Alberta College of Social Workers",  
-                "Alberta College of Speech-Language Pathologists and Audiologists",   
+                "Alberta College of Speech-Language Pathologists and Audiologists",
                 "Canadian Therapeutic Recreation Association",
                 "College and Association of Respiratory Therapists of Alberta",  
-                "College of Acupuncturists of Alberta",   
-                "College of Alberta Dental Assistants",   
+                "College of Acupuncturists of Alberta",
+                "College of Alberta Dental Assistants",
                 "College of Alberta Denturists",  
                 "College of Alberta Psychologists",  
                 "College of Chiropractors of Alberta",  
                 "College of Dental Surgeons of Alberta",
-                "College of Dental Technologists of Alberta",   
+                "College of Dental Technologists of Alberta",
                 "College of Dietitians of Alberta",  
                 "College of Hearing Aid Practitioners of Alberta",  
                 "College of Licensed Practical Nurses of Alberta",  
@@ -62,7 +62,7 @@ const onChangeProvincialSelect = (evt) => {
                 "College of Naturopathic Doctors of Alberta",  
                 "College of Opticians of Alberta",  
                 "College of Physicians and Surgeons of Alberta",  
-                "College of Physiotherapists of Alberta",   
+                "College of Physiotherapists of Alberta",
                 "College of Podiatric Physicians of Alberta",  
                 "College of Registered Dental Hygienists of Alberta",  
                 "College of Registered Nurses of Alberta",  
@@ -104,7 +104,7 @@ const onChangeProvincialSelect = (evt) => {
             break;
         case "BC": 
             licensingArrayProvinceSpecifiedList = ["BC Association of Clinical Counsellors",
-                "British Columbia College of Nurses and Midwives", 
+                "British Columbia College of Nurses and Midwives", 
                 "British Columbia College of Oral Health Professionals", 
                 "British Columbia College of Social Workers",  
                 "Canadian Therapeutic Recreation Association",
@@ -238,7 +238,7 @@ const onChangeProvincialSelect = (evt) => {
                 "New Brunswick Podiatry Association",
                 "New Brunswick Society of Cardiology Technologists",
                 "New Brunswick Society of Medical Laboratory Technologists",
-                "New Brunswick Association of Speech-Language Pathologists and Audiologists",
+                "New Brunswick Association of Speech-Language Pathologists and Audiologists",
                 "Nurses' Association of New Brunswick",
                 "Opticians' Association of New Brunswick",
                 "Paramedic Association of New Brunswick",
@@ -330,7 +330,7 @@ const onChangeProvincialSelect = (evt) => {
             licensingArrayProvinceSpecifiedList = ["Canadian Therapeutic Recreation Association",
                 "College of Audiology and Speech-Language Pathology of Newfoundland and Labrador",
                 "College of Licensed Practical Nurses of Newfoundland and Labrador",
-                "College of Massage Therapists Newfoundland",
+                "College of Massage Therapists Newfoundland",
                 "College of Midwives of Newfoundland and Labrador",
                 "College of Physicians and Surgeons of Newfoundland and Labrador",
                 "College of Registered Nurses of Newfoundland and Labrador",
@@ -567,7 +567,7 @@ const onChangeProvincialSelect = (evt) => {
                 "Ordre des Hygiénistes Dentaires du Québec",
                 "Ordre des infirmières et infirmiers auxiliaires du Québec",
                 "Ordre des infirmières et infirmiers du Québec",
-                `Ordre des opticiens d’ordonnances du Québec`,
+                `Ordre des opticiens d'ordonnances du Québec`,
                 "Ordre des optométristes du Québec",
                 "Ordre des orthophonistes et audiologists du Québec",
                 "Ordre des pharmaciens du Québec",
@@ -638,6 +638,19 @@ const onChangeProvincialSelect = (evt) => {
     addOptionsValueToProfessionsSelect(professionsOptionsList);
     addOptionsValueToLicensingBodySelect(licensingArrayProvinceSpecifiedList);
     
+}
+
+const onClickSubmitRegister = () => {
+    const firstNameField = document.getElementById("00NHu00000LLlW1");
+    const lastNameField = document.getElementById("00NHu00000LLlW6");
+    const email = document.getElementById("00NHu00000RV7Gh");
+    const street = document.getElementById("00NHu00000LLlVX");
+    const city = document.getElementById("00NHu00000LLlVc");
+    const province = document.getElementById("00NHu00000LLlWB");
+
+    if(firstNameField.value === null) {
+
+    }
 }
 
 provinceSelect.addEventListener("change", onChangeProvincialSelect);
