@@ -612,12 +612,76 @@ const onChangeProvincialSelect = (evt) => {
             break;
         case "YK" :
             alert(notAvaliableMessage);
+            licensingArrayProvinceSpecifiedList = ["Canadian Therapeutic Recreation Association",
+                "Government of Yukon, Yukon Department of Community Services",
+                "Professional Licensing and Regulatory Affairs, Yukon Government",
+                "Yukon Department of Community Services, Professional Licensing and Regulatory Affairs Branch",
+                "Yukon Medical Council",
+                "Yukon Registered Nurses Association",
+                "None of the above"];
+             professionsOptionsList = ["Chiropractor",
+                "Dental Hygienist",
+                "Dental Therapist",
+                "Dentist",
+                "Denturist",
+                "Licensed Practical Nurse",
+                "Nurse Practitioner",
+                "Nursing Assistant",
+                "Occupational Therapist",
+                "Optometrist",
+                "Pharmacist",
+                "Physician",
+                "Physiotherapist",
+                "Recreation Therapist",
+                "Registered Nurse",
+                "Registered Psychiatric Nurse",
+                "None of the above"];
             break;
         case "NT" :
             alert(notAvaliableMessage);
+            licensingArrayProvinceSpecifiedList = ["Canadian Therapeutic Recreation Association",
+                "Government of the Northwest Territories, Health and Social Services",
+                "Registered Nurses Association of the Northwest Territories and Nunavut",
+                "None of the above"];
+             professionsOptionsList = ["Dental Hygienist",
+                "Dental Therapist",
+                "Dentist",
+                "Denturist",
+                "Hearing Aid Practitioner",
+                "Licensed Practical Nurse",
+                "Midwife",
+                "Naturopathic Doctor"
+                "Nurse Practitioner",
+                "Occupational Therapist",
+                "Optometrist",
+                "Pharmacist",
+                "Physician",
+                "Psychologist",
+                "Recreation Therapist",
+                "Registered Nurse",
+                "Social Worker",
+                "None of the above"];
             break;
         case "NU" :   
             alert(notAvaliableMessage);
+            licensingArrayProvinceSpecifiedList = ["Canadian Therapeutic Recreation Association",
+                "Government of Nunavut, Department of Health",
+                "Registered Nurses Association of the Northwest Territories and Nunavut",
+                "None of the above"];
+             professionsOptionsList = ["Dental Hygienist",
+                "Dental Therapist",
+                "Dentist",
+                "Denturist",
+                "Licensed Practical Nurse",
+                "Midwife",
+                "Nurse Practitioner",
+                "Occupational Therapist",
+                "Optometrist",
+                "Pharmacist",
+                "Physician",
+                "Recreation Therapist",
+                "Registered Nurse",
+                "None of the above"];
             break;
         case "":
             alert("Please select the Canadian province of your practice to continue.")
