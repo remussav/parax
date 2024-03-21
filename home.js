@@ -183,7 +183,7 @@ const onChangeProvincialSelect = (evt) => {
                 "Manitoba Naturopathic Association",
                 "Opticians of Manitoba",
                 "Psychological Association of Manitoba",
-                "Canadian Therapeutic Recreation Association"
+                "Canadian Therapeutic Recreation Association",
                 "None of the above"];
              professionsOptionsList = ["Audiologist",
                 "Chiropractor",
@@ -665,7 +665,7 @@ const onChangeProvincialSelect = (evt) => {
                 "Hearing Aid Practitioner",
                 "Licensed Practical Nurse",
                 "Midwife",
-                "Naturopathic Doctor"
+                "Naturopathic Doctor",
                 "Nurse Practitioner",
                 "Occupational Therapist",
                 "Optometrist",
