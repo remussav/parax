@@ -625,7 +625,7 @@ const onChangeProvincialSelect = (evt) => {
                 "Speech Language Pathologist",
                 "None of the above"];
             break;
-        case "YK" :
+        case "YT" :
             licensingArrayProvinceSpecifiedList = ["Canadian Therapeutic Recreation Association",
                 "Government of Yukon, Yukon Department of Community Services",
                 "Professional Licensing and Regulatory Affairs, Yukon Government",
