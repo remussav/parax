@@ -626,9 +626,6 @@ const onChangeProvincialSelect = (evt) => {
                 "None of the above"];
             break;
         case "YK" :
-            alert(notAvaliableMessage);
-            break;
-        case "YK" :
             licensingArrayProvinceSpecifiedList = ["Canadian Therapeutic Recreation Association",
                 "Government of Yukon, Yukon Department of Community Services",
                 "Professional Licensing and Regulatory Affairs, Yukon Government",
@@ -655,9 +652,6 @@ const onChangeProvincialSelect = (evt) => {
                 "None of the above"];
             break;
         case "NT" :
-            alert(notAvaliableMessage);
-            break;
-        case "NT" :
             licensingArrayProvinceSpecifiedList = ["Canadian Therapeutic Recreation Association",
                 "Government of the Northwest Territories, Health and Social Services",
                 "Registered Nurses Association of the Northwest Territories and Nunavut",
@@ -680,9 +674,6 @@ const onChangeProvincialSelect = (evt) => {
                 "Registered Nurse",
                 "Social Worker",
                 "None of the above"];
-            break;
-        case "NU" :
-            alert(notAvaliableMessage);
             break;
         case "NU" :  
             licensingArrayProvinceSpecifiedList = ["Canadian Therapeutic Recreation Association",
