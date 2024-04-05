@@ -5,6 +5,7 @@ var professionsSelect = document.getElementById("professionsList");
 var provinceSelect = document.getElementById("00NHu00000LLlWB");
 var licensingBodySelect = document.getElementById("licensingBodiesList");
 var referralSelect = document.getElementById("referralSelect");
+var discoveryPass = document.getElementById("00NHu00000RWnIs");
 
 const addOptionsValueToProfessionsSelect = (professionsArray) => {
     var option = document.createElement("option");
@@ -736,7 +737,20 @@ const onChangeReferralSelect = (evt) => {
     }
 }
 
+const onChangeDiscoveryPass = (evt) => {
+    var discoveryPassAddress = document.getElementById("discoveryPassAddress");
+    var discoveryPass = evt.target;
+    if (discoveryPass.checked) {
+        discoveryPassAddress.classList.remove("w-hidden");
+    }
+    else {
+        discoveryPassAddress.classList.add("w-hidden");
+    }
+}
+
 
 referralSelect.addEventListener("change", onChangeReferralSelect)
 
 provinceSelect.addEventListener("change", onChangeProvincialSelect);
+
+discoveryPass.addEventListener("change", onChangeDiscoveryPass);

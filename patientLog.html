@@ -46,36 +46,40 @@
     <label class="w-checkbox checkbox-field" for="00NHu00000RWnIs">
         <input id="00NHu00000RWnIs" class="w-checkbox-input checkbox" name="00NHu00000RWnIs" type="checkbox" value="1" />I was prescribed a Parks Canada Discovery Pass.<br>
     </label>
-    <label class="field-label" for="00NHu00000LLlVX">If you were prescribed a Parks Canada Discovery Pass, please provide your mailing address so we can send your Pass to you:</label>
-    <div class="_3-boxes w-row">
-        <div class="form-column left w-col w-col-3">
-            <input id="00NHu00000LLlVX" class="text-field w-input" maxlength="255" name="00NHu00000LLlVX" size="20" type="text" placeholder="Street Address" />
+
+    <fieldset id="discoveryPassAddress" class="w-hidden">
+        <label class="field-label" for="00NHu00000LLlVX">If you were prescribed a Parks Canada Discovery Pass, please provide your mailing address so we can send your Pass to you:</label>
+        <div class="_3-boxes w-row">
+            <div class="form-column left w-col w-col-3">
+                <input id="00NHu00000LLlVX" class="text-field w-input" maxlength="255" name="00NHu00000LLlVX" size="20" type="text" placeholder="Street Address" />
+            </div>
+            <div class="form-column middle w-col w-col-3">
+                <input id="00NHu00000LLlVc" class="text-field w-input" maxlength="255" name="00NHu00000LLlVc" size="20" type="text" placeholder="City" />
+            </div>
+            <div class="form-column middle w-col w-col-3">
+                <input id="00NHu00000LLlVh" class="text-field w-input" maxlength="255" name="00NHu00000LLlVh" size="20" type="text" placeholder="Postal Code" />
+            </div>
+            <div class="form-column right w-col w-col-3">
+                <select id="00NHu00000LLlWB" class="drop-down-field w-select"  name="00NHu00000LLlWB" title="Province" ><option value="">Province</option>
+                    <option value="AB">AB</option>
+                    <option value="BC">BC</option>
+                    <option value="MB">MB</option>
+                    <option value="NB">NB</option>
+                    <option value="NL">NL</option>
+                    <option value="NS">NS</option>
+                    <option value="NT">NT</option>
+                    <option value="NU">NU</option>
+                    <option value="ON">ON</option>
+                    <option value="PE">PE</option>
+                    <option value="QC">QC</option>
+                    <option value="SK">SK</option>
+                    <option value="YT">YT</option>
+                    <option value="None of the above">None of the above</option>
+                    </select>
+            </div>
         </div>
-        <div class="form-column middle w-col w-col-3">
-            <input id="00NHu00000LLlVc" class="text-field w-input" maxlength="255" name="00NHu00000LLlVc" size="20" type="text" placeholder="City" />
-        </div>
-        <div class="form-column middle w-col w-col-3">
-            <input id="00NHu00000LLlVh" class="text-field w-input" maxlength="255" name="00NHu00000LLlVh" size="20" type="text" placeholder="Postal Code" />
-        </div>
-        <div class="form-column right w-col w-col-3">
-            <select id="00NHu00000LLlWB" class="drop-down-field w-select"  name="00NHu00000LLlWB" title="Province" ><option value="">Province</option>
-                <option value="AB">AB</option>
-                <option value="BC">BC</option>
-                <option value="MB">MB</option>
-                <option value="NB">NB</option>
-                <option value="NL">NL</option>
-                <option value="NS">NS</option>
-                <option value="NT">NT</option>
-                <option value="NU">NU</option>
-                <option value="ON">ON</option>
-                <option value="PE">PE</option>
-                <option value="QC">QC</option>
-                <option value="SK">SK</option>
-                <option value="YT">YT</option>
-                <option value="None of the above">None of the above</option>
-                </select>
-        </div>
-    </div>
+    </fieldset>
+
     <label class="field-label" for="00NHu00000LLptY">How did you hear about us?</label>
     <select  id="referralSelect" class="drop-down-field w-select" title="How did you hear about us?"><option value="">--None--</option><option value="Licensing college or other healthcare organization">Licensing college or other healthcare organization</option>
         <option value="News (TV, radio, magazine)">News (TV, radio, magazine)</option>
