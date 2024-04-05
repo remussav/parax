@@ -753,4 +753,6 @@ referralSelect.addEventListener("change", onChangeReferralSelect)
 
 provinceSelect.addEventListener("change", onChangeProvincialSelect);
 
-discoveryPass.addEventListener("change", onChangeDiscoveryPass);
+if (discoveryPass) {
+    discoveryPass.addEventListener("change", onChangeDiscoveryPass);
+}
