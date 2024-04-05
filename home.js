@@ -1,9 +1,9 @@
 
 
 
-var professionsSelect = document.getElementById("00NHu00000LLlWG");
+var professionsSelect = document.getElementById("professionsList");
 var provinceSelect = document.getElementById("00NHu00000LLlWB");
-var licensingBodySelect = document.getElementById("00NHu00000LLsJs");
+var licensingBodySelect = document.getElementById("licensingBodiesList");
 
 const addOptionsValueToProfessionsSelect = (professionsArray) => {
     var option = document.createElement("option");
@@ -11,7 +11,7 @@ const addOptionsValueToProfessionsSelect = (professionsArray) => {
         var option = document.createElement("option");
         option.value = professionsArray[i];
         option.text = professionsArray[i];
-        professionsSelect.add(option);
+        professionsSelect.append(option);
     }
 }
 
@@ -21,7 +21,7 @@ const addOptionsValueToLicensingBodySelect = (licensingBodyArray) => {
         var option = document.createElement("option");
         option.value = licensingBodyArray[i];
         option.text = licensingBodyArray[i];
-        licensingBodySelect.add(option);
+        licensingBodySelect.append(option);
     }
 }
 
@@ -704,7 +704,6 @@ const onChangeProvincialSelect = (evt) => {
         default:
             break;
     }
-
     addOptionsValueToProfessionsSelect(professionsOptionsList);
     addOptionsValueToLicensingBodySelect(licensingArrayProvinceSpecifiedList);
     
