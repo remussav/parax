@@ -77,7 +77,7 @@
         </div>
     </div>
     <label class="field-label" for="00NHu00000LLptY">How did you hear about us?</label>
-    <select id="00NHu00000LLptY" class="drop-down-field w-select" name="00NHu00000LLptY" title="How did you hear about us?"><option value="">--None--</option><option value="Licensing college or other healthcare organization">Licensing college or other healthcare organization</option>
+    <select  id="referralSelect" class="drop-down-field w-select" title="How did you hear about us?"><option value="">--None--</option><option value="Licensing college or other healthcare organization">Licensing college or other healthcare organization</option>
         <option value="News (TV, radio, magazine)">News (TV, radio, magazine)</option>
         <option value="Patient">Patient</option>
         <option value="Seminar or presentation">Seminar or presentation</option>
@@ -85,6 +85,7 @@
         <option value="Word of mouth (coworker, family, friend)">Word of mouth (coworker, family, friend)</option>
         <option value="Other">Other</option>
     </select>
+    <input class="text-field w-input w-hidden" id="00NHu00000LLptY" maxlength="255" name="00NHu00000LLptY" size="20" type="text" placeholder="Other"/>
 
     <label class="w-checkbox checkbox-field" for="00NHu00000LLptT">
         <input id="00NHu00000LLptT" class="w-checkbox-input checkbox" name="00NHu00000LLptT" type="checkbox" value="1" checked />
@@ -97,4 +98,6 @@
 
     <input class="navigation-button form w-button" type="submit" id="patientLogSubmit" value="Send">    
 </form>
-    <link rel="stylesheet" href="home.css">
+
+<script src="./home.js"></script>
+<link rel="stylesheet" href="home.css">
