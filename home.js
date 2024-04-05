@@ -739,8 +739,8 @@ const onChangeReferralSelect = (evt) => {
 
 const onChangeDiscoveryPass = (evt) => {
     var discoveryPassAddress = document.getElementById("discoveryPassAddress");
-    var discoveryPass = evt.target;
-    if (discoveryPass.checked) {
+    var discoveryPassValue = evt.target;
+    if (discoveryPassValue.checked) {
         discoveryPassAddress.classList.remove("w-hidden");
     }
     else {
