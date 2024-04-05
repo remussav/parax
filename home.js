@@ -4,6 +4,7 @@
 var professionsSelect = document.getElementById("professionsList");
 var provinceSelect = document.getElementById("00NHu00000LLlWB");
 var licensingBodySelect = document.getElementById("licensingBodiesList");
+var referralSelect = document.getElementById("referralSelect");
 
 const addOptionsValueToProfessionsSelect = (professionsArray) => {
     var option = document.createElement("option");
@@ -721,5 +722,21 @@ const onClickSubmitRegister = () => {
 
     }
 }
+
+const onChangeReferralSelect = (evt) => {
+    var select = evt.target;
+    var other = document.getElementById("00NHu00000LLptY");
+    if (select.value == "Other") {
+        other.value = "";
+        other.classList.remove("w-hidden");
+    }
+    else {
+        other.classList.add("w-hidden");
+        other.value = select.value;
+    }
+}
+
+
+referralSelect.addEventListener("change", onChangeReferralSelect)
 
 provinceSelect.addEventListener("change", onChangeProvincialSelect);
