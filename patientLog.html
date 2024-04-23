@@ -11,18 +11,18 @@
     <label class="field-label" for="00NHu00000LLlW1">Full Name</label>
     <div class="name-boxes w-row">
         <div class="name-box left w-col w-col-6">
-            <input class="text-field w-input" id="00NHu00000LLlW1" maxlength="255" name="00NHu00000LLlW1" size="20" type="text" placeholder="First Name" required=true/>
+            <input class="text-field w-input" id="00NHu00000LLlW1" maxlength="255" name="00NHu00000LLlW1" size="20" type="text" placeholder="First Name" required/>
             <span class="error" aria-live="polite"></span>
         </div>
         <div class="name-box right w-col w-col-6">
-            <input class="text-field w-input" maxlength="256" name="Last-Name" data-name="Last Name" placeholder="Last Name" type="text" id="Last-Name-2" required="">
+            <input class="text-field w-input" maxlength="256" name="Last-Name" data-name="Last Name" placeholder="Last Name" type="text" id="Last-Name-2" required>
             <span class="error" aria-live="polite"></span>
         </div>
     </div>
     
     
     <label class="field-label" for="00NHu00000RV7Gh">Email</label>
-    <input id="00NHu00000RV7Gh" class="text-field w-input" maxlength="80" name="00NHu00000RV7Gh" size="20" type="text" />
+    <input id="00NHu00000RV7Gh" class="text-field w-input" maxlength="80" name="00NHu00000RV7Gh" size="20" type="email" />
   
     <label class="field-label"> For your prescription to be verified, the following three fields must match the prescription your healthcare provider submits.</label>
     <div class="w-row">
@@ -35,7 +35,7 @@
             <div class="box-subtitle">Prescription Date</div>
         </div>
         <div class="form-column right w-col w-col-4">
-            <input id="00NHu00000RWnIn" name="00NHu00000RWnIn" class="text-field w-input" maxlength="256" placeholder="AA" type="text" required>
+            <input id="00NHu00000RWnIn" name="00NHu00000RWnIn" class="text-field w-input" maxlength="256" placeholder="AA" type="text" pattern="[a-zA-Z0-9]*" required>
             <div class="box-subtitle">Patient's first and last initials </div>
         </div>
     </div>

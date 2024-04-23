@@ -6,11 +6,11 @@
     <input type=hidden name="retURL" value="https://parkprescriptions.webflow.io/en/log-your-parx-success-copy">
     
     <select  id="00NHu00000RWnJ2" name="00NHu00000RWnJ2" title="Form Type" hidden>
-    <option value="PrescriberLog" selected>PrescriberLog</option>
+        <option value="PrescriberLog" selected>PrescriberLog</option>
     </select>
     
     <select id="00NHu00000P8gbF" name="00NHu00000P8gbF" title="Language" hidden>
-    <option value="English" selected>English</option>
+        <option value="English" selected>English</option>
     </select>
     
     <label class="field-label">My PaRx code is: </label>
@@ -24,7 +24,7 @@
             <div class="box-subtitle">Prescription Date</div>
         </div>
         <div class="form-column right w-col w-col-4">
-            <input id="00NHu00000RWnIn" name="00NHu00000RWnIn" class="text-field w-input" maxlength="256" placeholder="AA" type="text" required>
+            <input id="00NHu00000RWnIn" name="00NHu00000RWnIn" class="text-field w-input" maxlength="256" placeholder="AA" type="text" pattern="[a-zA-Z0-9]*" required>
             <div class="box-subtitle">Patient's first and last initials </div>
         </div>
     </div>
@@ -37,7 +37,7 @@
     </label>
     <label class="w-checkbox checkbox-field"><span for="CMN-2" class="field-label w-form-label"><strong>Important update regarding Canadian Museum of Nature Passes.<br>‍</strong>You no longer need to check the “I am prescribing/was prescribed a Canadian Museum of Nature Pass” when you Log Your PaRx to prescribe your patient/be prescribed a Canadian Museum of Nature Pass. Patients simply need to present their PaRx prescription and matching ID at the museum’s Admission Desk. Learn more <a href="https://www.parkprescriptions.ca/en/partner-offers"><strong>here</strong></a>.</span></label>
     <label class="field-label" for="00NHu00000RV7Gh">Email:</label>
-    <input id="00NHu00000RV7Gh" class="text-field w-input" maxlength="80" name="00NHu00000RV7Gh" size="20" type="text" />
+    <input id="00NHu00000RV7Gh" class="text-field w-input" maxlength="80" name="00NHu00000RV7Gh" size="20" type="email" required/>
     
     <input class="navigation-button form w-button" type="submit" id="prescriberLogSubmit" value="Send">
 
