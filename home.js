@@ -1,9 +1,9 @@
 
 
 
-var professionsSelect = document.getElementById("professionsList");
-var provinceSelect = document.getElementById("00NHu00000LLlWB");
-var licensingBodySelect = document.getElementById("licensingBodiesList");
+var professionsSelect = document.getElementByClassName("professionsList");
+var provinceSelect = document.getElementByClassName("provinceList");
+var licensingBodySelect = document.getElementByClassName("licensingBodiesList");
 var referralSelectors = document.getElementsByClassName("referralSelect");
 var discoveryPassValue = document.getElementsByClassName("discoveryPass")[0];
 
